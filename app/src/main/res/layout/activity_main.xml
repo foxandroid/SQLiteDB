@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/writedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write Data"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/inputid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/writedata"
+        android:width="100dp"
+        android:layout_marginStart="20dp"
+        android:hint="ID"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/inputitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/writedata"
+        android:width="100dp"
+        android:layout_toRightOf="@id/inputid"
+        android:layout_marginLeft="10dp"
+        android:hint="ITEM"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/inputqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/writedata"
+        android:layout_toRightOf="@+id/inputitem"
+        android:width="100dp"
+        android:layout_marginStart="20dp"
+        android:hint="QTY"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/writebutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Write Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inputid"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/readdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/writebutton"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/readid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/readdata"
+        android:width="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="ID"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/readitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/readid"
+        android:layout_marginStart="50dp"
+        android:text="ITEM"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/readqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/readid"
+        android:text="QTY"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:visibility="invisible"/>
+
+
+
+
+    <Button
+        android:id="@+id/readbutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Read Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/readitem"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/updatedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/readbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"/>
+
+    <EditText
+        android:id="@+id/updateid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updatedata"
+        android:width="100dp"
+        android:layout_marginStart="20dp"
+        android:hint="ID"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/updateitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updatedata"
+        android:width="100dp"
+        android:layout_toRightOf="@id/inputid"
+        android:layout_marginLeft="10dp"
+        android:hint="ITEM"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/updateqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updatedata"
+        android:layout_toRightOf="@+id/inputitem"
+        android:width="100dp"
+        android:layout_marginStart="20dp"
+        android:hint="QTY"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/updatebutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/updateqty"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Update Data"/>
+
+    <TextView
+        android:id="@+id/deletedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Delete Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/updatebutton"
+        android:textSize="40dp"/>
+
+    <EditText
+        android:id="@+id/deleteid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/deletedata"
+        android:hint="ID"/>
+
+    <Button
+        android:id="@+id/deletedatabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Data"
+        android:layout_below="@id/deleteid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>
